@@ -11,16 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class WebForm2
-
-    '''<summary>
-    '''form1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
+Partial Public Class WebForm4
 
     '''<summary>
     '''GridView1 control.
@@ -32,11 +23,11 @@ Partial Public Class WebForm2
     Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''EmpDataSource1 control.
+    '''SQLCustomerDS control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents EmpDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents SQLCustomerDS As Global.System.Web.UI.WebControls.SqlDataSource
 End Class

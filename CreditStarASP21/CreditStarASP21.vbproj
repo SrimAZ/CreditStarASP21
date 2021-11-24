@@ -181,8 +181,9 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Employees.aspx" />
-    <Content Include="WebForm2.aspx" />
     <Content Include="updateEmployees.aspx" />
+    <Content Include="employeesMaster.aspx" />
+    <Content Include="customerData.aspx" />
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -295,18 +296,25 @@
       <DependentUpon>Employees.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="WebForm2.aspx.designer.vb">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm2.aspx.vb">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="updateEmployees.aspx.designer.vb">
       <DependentUpon>updateEmployees.aspx</DependentUpon>
     </Compile>
     <Compile Include="updateEmployees.aspx.vb">
       <DependentUpon>updateEmployees.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="employeesMaster.aspx.designer.vb">
+      <DependentUpon>employeesMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="employeesMaster.aspx.vb">
+      <DependentUpon>employeesMaster.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="customerData.aspx.designer.vb">
+      <DependentUpon>customerData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customerData.aspx.vb">
+      <DependentUpon>customerData.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
