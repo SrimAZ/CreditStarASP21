@@ -184,6 +184,9 @@
     <Content Include="updateEmployees.aspx" />
     <Content Include="employeesMaster.aspx" />
     <Content Include="customerData.aspx" />
+    <Content Include="loginPage.aspx" />
+    <Content Include="WebForm6.aspx" />
+    <Content Include="customerInformation.aspx" />
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -315,6 +318,27 @@
     </Compile>
     <Compile Include="customerData.aspx.vb">
       <DependentUpon>customerData.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="loginPage.aspx.designer.vb">
+      <DependentUpon>loginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginPage.aspx.vb">
+      <DependentUpon>loginPage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm6.aspx.designer.vb">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm6.aspx.vb">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="customerInformation.aspx.designer.vb">
+      <DependentUpon>customerInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customerInformation.aspx.vb">
+      <DependentUpon>customerInformation.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
