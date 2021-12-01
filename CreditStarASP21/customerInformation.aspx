@@ -1,17 +1,20 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="customerData.aspx.vb" Inherits="CreditStarASP21.WebForm4" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="customerInformation.aspx.vb" Inherits="CreditStarASP21.WebForm7" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="CUSTOMERID" DataSourceID="SQLCustomerDS" ForeColor="#333333" GridLines="None">
+    <br />
+<br />
+<br />
+<asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="CUSTOMERID" DataSourceID="customerUpdateCS" ForeColor="#333333" GridLines="None">
     <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
     <Columns>
         <asp:BoundField DataField="CUSTOMERID" HeaderText="CUSTOMERID" ReadOnly="True" SortExpression="CUSTOMERID" />
-        <asp:BoundField DataField="CUSTOMER_TYPE" HeaderText="CUSTOMER_TYPE" SortExpression="CUSTOMER_TYPE" />
+        <asp:BoundField DataField="CUSTOMERTYPE" HeaderText="CUSTOMERTYPE" SortExpression="CUSTOMERTYPE" />
         <asp:BoundField DataField="CFIRSTNAME" HeaderText="CFIRSTNAME" SortExpression="CFIRSTNAME" />
         <asp:BoundField DataField="CLASTNAME" HeaderText="CLASTNAME" SortExpression="CLASTNAME" />
         <asp:BoundField DataField="NATIONALITY" HeaderText="NATIONALITY" SortExpression="NATIONALITY" />
+        <asp:BoundField DataField="DOB" HeaderText="DOB" SortExpression="DOB" />
         <asp:BoundField DataField="GENDER" HeaderText="GENDER" SortExpression="GENDER" />
         <asp:BoundField DataField="EMAILID" HeaderText="EMAILID" SortExpression="EMAILID" />
         <asp:BoundField DataField="PHONENUMBER" HeaderText="PHONENUMBER" SortExpression="PHONENUMBER" />
-        <asp:BoundField DataField="CREDIT_SCORE" HeaderText="CREDIT_SCORE" SortExpression="CREDIT_SCORE" />
     </Columns>
     <EditRowStyle BackColor="#999999" />
     <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -24,5 +27,5 @@
     <SortedDescendingCellStyle BackColor="#FFFDF8" />
     <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
 </asp:GridView>
-<asp:SqlDataSource ID="SQLCustomerDS" runat="server" ConnectionString="<%$ ConnectionStrings:CreditStarCS %>" ProviderName="<%$ ConnectionStrings:CreditStarCS.ProviderName %>" SelectCommand="SELECT * FROM &quot;CUSTOMERS&quot;"></asp:SqlDataSource>
+<asp:SqlDataSource ID="customerUpdateCS" runat="server" ConnectionString="<%$ ConnectionStrings:CreditStarCS %>" ProviderName="<%$ ConnectionStrings:CreditStarCS.ProviderName %>" SelectCommand="SELECT * FROM &quot;CUSTOMERS&quot;"></asp:SqlDataSource>
 </asp:Content>

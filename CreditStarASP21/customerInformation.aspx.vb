@@ -1,11 +1,12 @@
-﻿Public Class WebForm3
+﻿Public Class WebForm7
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
     End Sub
 
-    Protected Sub DetailsView1_PageIndexChanging(sender As Object, e As DetailsViewPageEventArgs)
+    Protected Sub GridView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles GridView1.SelectedIndexChanged
+
 
     End Sub
 End Class

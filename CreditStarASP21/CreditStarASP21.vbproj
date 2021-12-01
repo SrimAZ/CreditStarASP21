@@ -180,10 +180,11 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Employees.aspx" />
-    <Content Include="updateEmployees.aspx" />
     <Content Include="employeesMaster.aspx" />
     <Content Include="customerData.aspx" />
+    <Content Include="loginPage.aspx" />
+    <Content Include="customerInformation.aspx" />
+    <Content Include="loanApplications.aspx" />
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -289,20 +290,6 @@
     <Compile Include="Site.Mobile.Master.designer.vb">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
-    <Compile Include="Employees.aspx.designer.vb">
-      <DependentUpon>Employees.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Employees.aspx.vb">
-      <DependentUpon>Employees.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="updateEmployees.aspx.designer.vb">
-      <DependentUpon>updateEmployees.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="updateEmployees.aspx.vb">
-      <DependentUpon>updateEmployees.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="employeesMaster.aspx.designer.vb">
       <DependentUpon>employeesMaster.aspx</DependentUpon>
     </Compile>
@@ -315,6 +302,27 @@
     </Compile>
     <Compile Include="customerData.aspx.vb">
       <DependentUpon>customerData.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="loginPage.aspx.designer.vb">
+      <DependentUpon>loginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginPage.aspx.vb">
+      <DependentUpon>loginPage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="customerInformation.aspx.designer.vb">
+      <DependentUpon>customerInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customerInformation.aspx.vb">
+      <DependentUpon>customerInformation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="loanApplications.aspx.designer.vb">
+      <DependentUpon>loanApplications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loanApplications.aspx.vb">
+      <DependentUpon>loanApplications.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
