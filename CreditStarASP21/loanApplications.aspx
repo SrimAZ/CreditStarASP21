@@ -5,6 +5,9 @@
     <br />
     <br />
     <br />
+    <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="applicationStatusDS" DataTextField="APPLICATION_STATUS" DataValueField="APPLICATION_STATUS">
+    </asp:DropDownList>
+    <asp:SqlDataSource ID="applicationStatusDS" runat="server" ConnectionString="<%$ ConnectionStrings:CreditStarCS %>" ProviderName="<%$ ConnectionStrings:CreditStarCS.ProviderName %>" SelectCommand="SELECT &quot;APPLICATION_STATUS&quot; FROM &quot;APPLICATIONS&quot;"></asp:SqlDataSource>
     <br />
     <br />
     <br />
@@ -21,5 +24,15 @@
             <asp:BoundField DataField="COMMENTS" HeaderText="COMMENTS" SortExpression="COMMENTS" />
         </Columns>
     </asp:GridView>
-    <asp:SqlDataSource ID="loanApplicationsDS" runat="server" ConnectionString="<%$ ConnectionStrings:CreditStarCS %>" ProviderName="<%$ ConnectionStrings:CreditStarCS.ProviderName %>" SelectCommand="SELECT * FROM &quot;APPLICATIONS&quot;"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="loanApplicationsDS" runat="server" ConnectionString="<%$ ConnectionStrings:CreditStarCS %>" ProviderName="<%$ ConnectionStrings:CreditStarCS.ProviderName %>" SelectCommand="SELECT * FROM &quot;APPLICATIONS&quot; WHERE (&quot;APPLICATION_STATUS&quot; = ?)">
+        <SelectParameters>
+            <asp:ControlParameter ControlID="DropDownList1" Name="APPLICATION_STATUS2" PropertyName="SelectedValue" Type="Decimal" />
+        </SelectParameters>
+    </asp:SqlDataSource>
+    <br />
+    <br />
+    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Button ID="Button1" runat="server" Text="Last 5 days" />
+&nbsp;&nbsp;&nbsp; 
 </asp:Content>

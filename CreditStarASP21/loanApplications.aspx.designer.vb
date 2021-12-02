@@ -14,6 +14,24 @@ Option Explicit On
 Partial Public Class WebForm6
 
     '''<summary>
+    '''DropDownList1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents DropDownList1 As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''applicationStatusDS control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents applicationStatusDS As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
     '''GridView1 control.
     '''</summary>
     '''<remarks>
@@ -30,4 +48,13 @@ Partial Public Class WebForm6
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents loanApplicationsDS As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''Button1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
 End Class

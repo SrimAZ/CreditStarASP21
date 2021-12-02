@@ -5,4 +5,7 @@
 
     End Sub
 
+    Protected Sub Login2_Authenticate(sender As Object, e As AuthenticateEventArgs) Handles Login2.Authenticate
+
+    End Sub
 End Class
