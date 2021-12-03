@@ -4,15 +4,12 @@
     <br />
     <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:DropDownList ID="DropDownListCustomerID" runat="server" DataSourceID="SqlDataSource1" DataTextField="CUSTOMERID" DataValueField="CUSTOMERID">
-    </asp:DropDownList>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CreditStarCS %>" ProviderName="<%$ ConnectionStrings:CreditStarCS.ProviderName %>" SelectCommand="SELECT &quot;CUSTOMERID&quot; FROM &quot;CUSTOMERS&quot;"></asp:SqlDataSource>
     <br />
     <br />
-&nbsp;&nbsp;&nbsp;    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="CUSTOMERID" DataSourceID="SQLCustomerDS" ForeColor="#333333" GridLines="None">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="CUSTOMERID" DataSourceID="SQLCustomerDS" ForeColor="#333333" GridLines="None" Width="1123px">
     <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
     <Columns>
-        <asp:CommandField ShowEditButton="True" />
+        <asp:CommandField ShowEditButton="True" ShowSelectButton="True" />
         <asp:BoundField DataField="CUSTOMERID" HeaderText="CUSTOMERID" ReadOnly="True" SortExpression="CUSTOMERID" />
         <asp:BoundField DataField="CUSTOMER_TYPE" HeaderText="CUSTOMER_TYPE" SortExpression="CUSTOMER_TYPE" />
         <asp:BoundField DataField="CFIRSTNAME" HeaderText="CFIRSTNAME" SortExpression="CFIRSTNAME" />
@@ -22,6 +19,7 @@
         <asp:BoundField DataField="EMAILID" HeaderText="EMAILID" SortExpression="EMAILID" />
         <asp:BoundField DataField="PHONENUMBER" HeaderText="PHONENUMBER" SortExpression="PHONENUMBER" />
         <asp:BoundField DataField="CREDIT_SCORE" HeaderText="CREDIT_SCORE" SortExpression="CREDIT_SCORE" />
+        <asp:BoundField DataField="DOB" HeaderText="DOB" SortExpression="DOB" />
     </Columns>
     <EditRowStyle BackColor="#999999" />
     <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -34,31 +32,4 @@
     <SortedDescendingCellStyle BackColor="#FFFDF8" />
     <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
 </asp:GridView>
-<asp:SqlDataSource ID="SQLCustomerDS" runat="server" ConnectionString="<%$ ConnectionStrings:CreditStarCS %>" ProviderName="<%$ ConnectionStrings:CreditStarCS.ProviderName %>" SelectCommand="SELECT * FROM &quot;CUSTOMERS&quot;" DeleteCommand="DELETE FROM &quot;CUSTOMERS&quot; WHERE &quot;CUSTOMERID&quot; = ?" InsertCommand="INSERT INTO &quot;CUSTOMERS&quot; (&quot;CUSTOMERID&quot;, &quot;CUSTOMER_TYPE&quot;, &quot;CFIRSTNAME&quot;, &quot;CLASTNAME&quot;, &quot;NATIONALITY&quot;, &quot;GENDER&quot;, &quot;EMAILID&quot;, &quot;PHONENUMBER&quot;, &quot;CREDIT_SCORE&quot;) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)" UpdateCommand="UPDATE &quot;CUSTOMERS&quot; SET &quot;CUSTOMER_TYPE&quot; = ?, &quot;CFIRSTNAME&quot; = ?, &quot;CLASTNAME&quot; = ?, &quot;NATIONALITY&quot; = ?, &quot;GENDER&quot; = ?, &quot;EMAILID&quot; = ?, &quot;PHONENUMBER&quot; = ?, &quot;CREDIT_SCORE&quot; = ? WHERE &quot;CUSTOMERID&quot; = ?">
-    <DeleteParameters>
-        <asp:Parameter Name="CUSTOMERID" Type="String" />
-    </DeleteParameters>
-    <InsertParameters>
-        <asp:Parameter Name="CUSTOMERID" Type="String" />
-        <asp:Parameter Name="CUSTOMER_TYPE" Type="String" />
-        <asp:Parameter Name="CFIRSTNAME" Type="String" />
-        <asp:Parameter Name="CLASTNAME" Type="String" />
-        <asp:Parameter Name="NATIONALITY" Type="String" />
-        <asp:Parameter Name="GENDER" Type="String" />
-        <asp:Parameter Name="EMAILID" Type="String" />
-        <asp:Parameter Name="PHONENUMBER" Type="Decimal" />
-        <asp:Parameter Name="CREDIT_SCORE" Type="Decimal" />
-    </InsertParameters>
-    <UpdateParameters>
-        <asp:Parameter Name="CUSTOMER_TYPE" Type="String" />
-        <asp:Parameter Name="CFIRSTNAME" Type="String" />
-        <asp:Parameter Name="CLASTNAME" Type="String" />
-        <asp:Parameter Name="NATIONALITY" Type="String" />
-        <asp:Parameter Name="GENDER" Type="String" />
-        <asp:Parameter Name="EMAILID" Type="String" />
-        <asp:Parameter Name="PHONENUMBER" Type="Decimal" />
-        <asp:Parameter Name="CREDIT_SCORE" Type="Decimal" />
-        <asp:Parameter Name="CUSTOMERID" Type="String" />
-    </UpdateParameters>
-    </asp:SqlDataSource>
 </asp:Content>

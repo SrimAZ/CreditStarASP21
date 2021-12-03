@@ -1,11 +1,22 @@
-﻿Public Class WebForm5
+﻿Imports System.Data.SqlClient
+
+
+
+Public Class WebForm5
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
     End Sub
 
-    Protected Sub Login2_Authenticate(sender As Object, e As AuthenticateEventArgs) Handles Login2.Authenticate
+
+    Protected Sub LoginButton_Click(sender As Object, e As EventArgs)
+        Dim connection As New SqlConnection("Server= SAMSNG-PC; Database = TestDB; Integrated Security = true")
+
+        Dim command As New SqlCommand("select * from Login_Details where Username = @username and Password = @password", connection)
+    End Sub
+
+    Protected Sub EmployeeID_TextChanged(sender As Object, e As EventArgs) Handles EmployeeID.TextChanged
 
     End Sub
 End Class

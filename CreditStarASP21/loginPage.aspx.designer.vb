@@ -14,11 +14,47 @@ Option Explicit On
 Partial Public Class WebForm5
 
     '''<summary>
-    '''Login2 control.
+    '''EmployeeID control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Login2 As Global.System.Web.UI.WebControls.Login
+    Protected WithEvents EmployeeID As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''EmployeeIDValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents EmployeeIDValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
+    '''EmployeePassword control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents EmployeePassword As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''LoginPasswordValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LoginPasswordValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
+    '''LoginButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LoginButton As Global.System.Web.UI.WebControls.Button
 End Class
