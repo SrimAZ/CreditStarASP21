@@ -8,7 +8,7 @@
         <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
         <p>
             <img alt="L1 Banner Header" src="Rendering_Images/loans_header_image.jpg" style="width: 697px; height: 360px" /></p>
-    </div>
+</div>
 
     <div class="row">
         <div class="col-md-4">

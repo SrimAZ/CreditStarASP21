@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class WebForm6
+Partial Public Class WebForm8
 
     '''<summary>
     '''GridView1 control.
@@ -23,20 +23,20 @@ Partial Public Class WebForm6
     Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''loanAppDS control.
+    '''displayEmployeesDS control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents loanAppDS As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents displayEmployeesDS As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
-    '''lFiveDaysApp control.
+    '''backDisplayEmployees control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lFiveDaysApp As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents backDisplayEmployees As Global.System.Web.UI.WebControls.Button
 End Class

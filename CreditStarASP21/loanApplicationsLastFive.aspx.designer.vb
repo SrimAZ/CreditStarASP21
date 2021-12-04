@@ -11,32 +11,23 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class WebForm6
+Partial Public Class WebForm3
 
     '''<summary>
-    '''GridView1 control.
+    '''DetailsView1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents DetailsView1 As Global.System.Web.UI.WebControls.DetailsView
 
     '''<summary>
-    '''loanAppDS control.
+    '''lastFiveDaysApps control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents loanAppDS As Global.System.Web.UI.WebControls.SqlDataSource
-
-    '''<summary>
-    '''lFiveDaysApp control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lFiveDaysApp As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents lastFiveDaysApps As Global.System.Web.UI.WebControls.SqlDataSource
 End Class

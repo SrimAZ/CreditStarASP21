@@ -5,4 +5,11 @@
 
     End Sub
 
+    Protected Sub Button3_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Protected Sub updateLoanApps_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class

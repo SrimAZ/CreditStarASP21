@@ -14,20 +14,56 @@ Option Explicit On
 Partial Public Class WebForm2
 
     '''<summary>
-    '''Button1 control.
+    '''employeesList control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents employeesList As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Button2 control.
+    '''updateEmployees control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button2 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents updateEmployees As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''listCustomers control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents listCustomers As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''updateCustomers control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents updateCustomers As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''viewLoanApps control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents viewLoanApps As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''updateLoanApps control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents updateLoanApps As Global.System.Web.UI.WebControls.Button
 End Class

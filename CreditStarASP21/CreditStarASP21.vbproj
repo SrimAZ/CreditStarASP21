@@ -185,7 +185,10 @@
     <Content Include="loginPage.aspx" />
     <Content Include="customerInformation.aspx" />
     <Content Include="loanApplications.aspx" />
-    <Content Include="WebForm1.aspx" />
+    <Content Include="UpdateEmployees.aspx" />
+    <Content Include="loanApplicationsLastFive.aspx" />
+    <Content Include="displayEmployees.aspx" />
+    <Content Include="UpdateCustomers.aspx" />
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -327,11 +330,32 @@
       <DependentUpon>loanApplications.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.vb">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="UpdateEmployees.aspx.designer.vb">
+      <DependentUpon>UpdateEmployees.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.vb">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="UpdateEmployees.aspx.vb">
+      <DependentUpon>UpdateEmployees.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="loanApplicationsLastFive.aspx.designer.vb">
+      <DependentUpon>loanApplicationsLastFive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loanApplicationsLastFive.aspx.vb">
+      <DependentUpon>loanApplicationsLastFive.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="displayEmployees.aspx.designer.vb">
+      <DependentUpon>displayEmployees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="displayEmployees.aspx.vb">
+      <DependentUpon>displayEmployees.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="UpdateCustomers.aspx.designer.vb">
+      <DependentUpon>UpdateCustomers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCustomers.aspx.vb">
+      <DependentUpon>UpdateCustomers.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
