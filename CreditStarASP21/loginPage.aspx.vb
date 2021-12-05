@@ -4,6 +4,7 @@ Imports System.Threading
 Imports System.Data.OleDb
 Imports System.Windows.Forms
 Imports System.Windows
+Imports System.DateTime
 
 Public Class WebForm5
     Inherits System.Web.UI.Page
@@ -18,15 +19,19 @@ Public Class WebForm5
             Dim conn As New OracleConnection(oradb)
             Dim cmd As New OracleCommand()
             Dim reader As OracleDataReader
+            Dim sessionObject
             conn.Open()
             cmd.Connection = conn
 
             Dim ip_empID As String = EmployeeID.Text
             Dim ip_pwd As String = EmployeePassword.Text
+
+
             Dim v_empid As String = ""
             Dim v_pwd As String = ""
 
-            Dim sql1 As String = "select LOGIN_EMPID from LOGIN_DETAILS where userid = '" + ip_empID + "'"
+            Dim sql1 As String = "select LOGIN_EMPID from LOGIN_DETAILS where LOGIN_EMPID = '" + ip_empID + "'"
+
             cmd = New OracleCommand(sql1, conn)
             cmd.CommandType = CommandType.Text
             If cmd.ExecuteReader() Is Nothing Then
@@ -50,7 +55,7 @@ Public Class WebForm5
                 v_pwd = reader.GetString(0)
             End If
 
-            Dim sql3 As String = "select LOGIN_EMPID from LOGIN_DETAILS where userid = '" + ip_empID + "'"
+            Dim sql3 As String = "select LOGIN_EMPID from LOGIN_DETAILS where LOGIN_EMPID = '" + ip_empID + "'"
             cmd = New OracleCommand(sql3, conn)
             cmd.CommandType = CommandType.Text
             If cmd.ExecuteReader() Is Nothing Then
@@ -65,7 +70,7 @@ Public Class WebForm5
                 Session("UIDLI") = reader.GetString(0)
             End If
 
-            Dim sql4 As String = "select LOGIN_EMPID from LOGIN_DETAILS where userid = '" + ip_empID + "'"
+            Dim sql4 As String = "select LOGIN_EMPID from LOGIN_DETAILS where LOGIN_EMPID = '" + ip_empID + "'"
             cmd = New OracleCommand(sql4, conn)
             cmd.CommandType = CommandType.Text
             reader = cmd.ExecuteReader()
@@ -73,20 +78,24 @@ Public Class WebForm5
             Dim gid As String = reader.GetString(0)
 
 
-            conn.Close()
+
 
             If v_empid = ip_empID And v_pwd = ip_pwd Then
-                MessageBox.Show("User Login Successful")
-                If gid = "UGRP102" Then
-                    Response.Redirect("employeeMaster.aspx")
-                Else
-                    Response.Redirect("employeeMaster.aspx")
-                End If
+                MessageBox.Show("Employee Login Successful")
+                Dim updateLoginDate As String = "UPDATE LOGIN_DETAILS SET LAST_LOGIN = SYSDATE WHERE LOGIN_EMPID = '" + v_empid + "'  "
+
+                MessageBox.Show(updateLoginDate)
+                cmd = New OracleCommand(updateLoginDate, conn)
+                Dim retVal = cmd.ExecuteNonQuery()
+
+                MessageBox.Show(retVal)
+                Response.Redirect("employeesMaster.aspx")
+
             Else
                 MessageBox.Show("User Login Failed")
                 Response.Redirect("LogInPage.aspx")
             End If
-
+        
         Catch ex As Exception When ex.Message <> "Thread was being aborted."
             MessageBox.Show("Please try again!")
         End Try
