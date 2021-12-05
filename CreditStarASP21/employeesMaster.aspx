@@ -32,7 +32,7 @@
     <br />
 &nbsp;
     <br />
-    <img alt="" src="Rendering_Images/Transactions.jpg" style="width: 626px; height: 494px" /><asp:Button ID="transactionButton" runat="server" BackColor="#000099" BorderColor="Black" BorderStyle="Solid" ForeColor="White" Height="81px" Text="Let's Make A Transaction" Width="378px" />
+    <img alt="" src="Rendering_Images/Transactions.jpg" style="width: 626px; height: 494px" /><asp:Button ID="transactionButton" runat="server" BackColor="#000099" BorderColor="Black" BorderStyle="Solid" ForeColor="White" Height="81px" PostBackUrl="~/displayTransactions.aspx" Text="Let's Make A Transaction" Width="378px" />
     <br />
     <hr />
 

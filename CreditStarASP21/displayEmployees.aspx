@@ -25,7 +25,9 @@
         <SortedDescendingCellStyle BackColor="#FFFDF8" />
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
-    <asp:SqlDataSource ID="displayEmployeesDS" runat="server" ConnectionString="<%$ ConnectionStrings:CreditStarCS %>" ProviderName="<%$ ConnectionStrings:CreditStarCS.ProviderName %>" SelectCommand="SELECT * FROM &quot;EMPLOYEES&quot;"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="displayEmployeesDS" runat="server" ConnectionString="<%$ ConnectionStrings:CreditStarCS %>" ProviderName="<%$ ConnectionStrings:CreditStarCS.ProviderName %>" SelectCommand="SELECT &quot;EMPID&quot;, &quot;EMP_TYPE&quot;, &quot;EMP_FNAME&quot;, &quot;EMP_LNAME&quot;, &quot;PHONE&quot;, &quot;BRANCH&quot;, &quot;DESIGNATION&quot;, &quot;JOIN_DATE&quot; FROM &quot;EMPLOYEES&quot;
+
+"></asp:SqlDataSource>
     <br />
     <br />
 &nbsp;
