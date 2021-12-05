@@ -84,11 +84,11 @@ Public Class WebForm5
                 MessageBox.Show("Employee Login Successful")
                 Dim updateLoginDate As String = "UPDATE LOGIN_DETAILS SET LAST_LOGIN = SYSDATE WHERE LOGIN_EMPID = '" + v_empid + "'  "
 
-                MessageBox.Show(updateLoginDate)
+
                 cmd = New OracleCommand(updateLoginDate, conn)
                 Dim retVal = cmd.ExecuteNonQuery()
 
-                MessageBox.Show(retVal)
+
                 Response.Redirect("employeesMaster.aspx")
 
             Else
