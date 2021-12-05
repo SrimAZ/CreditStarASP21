@@ -190,6 +190,7 @@
     <Content Include="loanApplicationsLastFive.aspx" />
     <Content Include="displayEmployees.aspx" />
     <Content Include="UpdateCustomers.aspx" />
+    <Content Include="updateLoanApplication.aspx" />
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -357,6 +358,13 @@
     </Compile>
     <Compile Include="UpdateCustomers.aspx.vb">
       <DependentUpon>UpdateCustomers.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="updateLoanApplication.aspx.designer.vb">
+      <DependentUpon>updateLoanApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updateLoanApplication.aspx.vb">
+      <DependentUpon>updateLoanApplication.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
