@@ -185,6 +185,7 @@
     <Content Include="loginPage.aspx" />
     <Content Include="customerInformation.aspx" />
     <Content Include="loanApplications.aspx" />
+    <Content Include="Rendering_Images\Transactions.jpg" />
     <Content Include="UpdateEmployees.aspx" />
     <Content Include="loanApplicationsLastFive.aspx" />
     <Content Include="displayEmployees.aspx" />

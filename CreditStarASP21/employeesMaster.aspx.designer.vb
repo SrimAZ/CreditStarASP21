@@ -66,4 +66,13 @@ Partial Public Class WebForm2
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents updateLoanApps As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''transactionButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents transactionButton As Global.System.Web.UI.WebControls.Button
 End Class

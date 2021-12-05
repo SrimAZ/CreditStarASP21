@@ -134,8 +134,7 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
-    height: 23px;
-}
+    }
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -1115,8 +1114,8 @@ figure {
 }
 img {
   vertical-align: middle;
-    height: 111px;
-    width: 306px;
+    height: 234px;
+    width: 349px;
 }
 .img-responsive,
 .thumbnail > img,

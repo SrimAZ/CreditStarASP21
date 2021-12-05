@@ -19,4 +19,12 @@ Public Class WebForm5
     Protected Sub EmployeeID_TextChanged(sender As Object, e As EventArgs) Handles EmployeeID.TextChanged
 
     End Sub
+
+    Protected Sub LoginButton_Click1(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Protected Sub LoginButton_Click2(sender As Object, e As EventArgs) Handles LoginButton.Click
+
+    End Sub
 End Class
