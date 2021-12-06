@@ -23,13 +23,13 @@ Partial Public Class WebForm4
     Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''customerListDS control.
+    '''displayCustomersDS control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents customerListDS As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents displayCustomersDS As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''returnCustomerData control.

@@ -23,15 +23,6 @@ Partial Public Class WebForm1
     Protected WithEvents DetailsView1 As Global.System.Web.UI.WebControls.DetailsView
 
     '''<summary>
-    '''editEmployees control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents editEmployees As Global.System.Web.UI.WebControls.SqlDataSource
-
-    '''<summary>
     '''backUpdateEmployees control.
     '''</summary>
     '''<remarks>
@@ -39,4 +30,13 @@ Partial Public Class WebForm1
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents backUpdateEmployees As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''editEmployees control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents editEmployees As Global.System.Web.UI.WebControls.SqlDataSource
 End Class

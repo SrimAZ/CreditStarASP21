@@ -118,7 +118,7 @@ optgroup,
 select,
 textarea {
   color: inherit;
-  margin: 0 0 0 197px;
+  margin: 0px 0 0 39px;
 }
 button {
   overflow: visible;
@@ -1113,8 +1113,7 @@ figure {
 }
 img {
   vertical-align: middle;
-    height: 234px;
-    width: 349px;
+    margin-left: 0px;
 }
 .img-responsive,
 .thumbnail > img,
@@ -2349,9 +2348,9 @@ pre code {
 }
 table {
   background-color: transparent;
-    margin-left: 200px;
-    margin-right: 79px;
-    margin-top: 54px;
+    margin-left: 5px;
+    margin-right: 59px;
+    margin-top: 80px;
 }
 table col[class*="col-"] {
   position: static;
@@ -4297,8 +4296,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   position: fixed;
-  right: 0;
-  left: 0;
+  right: -28px;
+  left: -192px;
   z-index: 1030;
 }
 .navbar-fixed-top .navbar-collapse,
@@ -4318,7 +4317,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-fixed-top {
-  top: 0;
+  top: -31px;
   border-width: 0 0 1px;
 }
 .navbar-fixed-bottom {
@@ -4364,6 +4363,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand > img {
   display: block;
+    margin-right: 22px;
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
@@ -4671,9 +4671,12 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse {
   background-color: #222;
   border-color: #080808;
+    height: 79px;
+    margin-top: 30px;
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
+    width: 203px;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
@@ -4739,6 +4742,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-toggle {
   border-color: #333;
+    left: 1771px;
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {

@@ -186,6 +186,9 @@
     <Content Include="loginPage.aspx" />
     <Content Include="customerInformation.aspx" />
     <Content Include="loanApplications.aspx" />
+    <Content Include="Rendering_Images\CS_Logo_Final.jpg" />
+    <Content Include="Rendering_Images\login_image.png" />
+    <Content Include="Rendering_Images\pic2.png" />
     <Content Include="Rendering_Images\Transactions.jpg" />
     <Content Include="UpdateEmployees.aspx" />
     <Content Include="loanApplicationsLastFive.aspx" />
@@ -194,6 +197,9 @@
     <Content Include="updateLoanApplication.aspx" />
     <Content Include="displayTransactions.aspx" />
     <Content Include="updateTransactions.aspx" />
+    <Content Include="loans.aspx" />
+    <Content Include="displayHome.aspx" />
+    <Content Include="displayEducation.aspx" />
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -382,6 +388,27 @@
     </Compile>
     <Compile Include="updateTransactions.aspx.vb">
       <DependentUpon>updateTransactions.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="loans.aspx.designer.vb">
+      <DependentUpon>loans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loans.aspx.vb">
+      <DependentUpon>loans.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="displayHome.aspx.designer.vb">
+      <DependentUpon>displayHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="displayHome.aspx.vb">
+      <DependentUpon>displayHome.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="displayEducation.aspx.designer.vb">
+      <DependentUpon>displayEducation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="displayEducation.aspx.vb">
+      <DependentUpon>displayEducation.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>

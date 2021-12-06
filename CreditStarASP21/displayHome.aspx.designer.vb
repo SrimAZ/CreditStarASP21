@@ -11,25 +11,25 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class WebForm9
+Partial Public Class WebForm14
 
     '''<summary>
-    '''DetailsView1 control.
+    '''GridView1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DetailsView1 As Global.System.Web.UI.WebControls.DetailsView
+    Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''updateCustomersDS control.
+    '''HomeDS control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents updateCustomersDS As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents HomeDS As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''backUpdateEmployees control.

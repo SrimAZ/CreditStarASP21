@@ -24,7 +24,7 @@
             <p>
                 Use your employee id and associated password to login securely. Click the below button to be redirected to the secure login page.</p>
             <p>
-                <a class="btn btn-default" href="loginPage.aspx">Learn more &raquo;</a>
+                <a class="btn btn-default" href="loginPage.aspx">Employee Login &raquo;</a>
             </p>
         </div>
     </div>

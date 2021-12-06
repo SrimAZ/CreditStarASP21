@@ -6,10 +6,14 @@
     <p>
     </p>
     <p>
-    &nbsp; <strong>Update Employees</strong>
+        &nbsp;<strong>Update Employees</strong>
     </p>
     <p>
-        <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="EMPID" DataSourceID="editEmployees" Height="50px" Width="251px">
+        <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="EMPID" DataSourceID="editEmployees" Height="50px" Width="251px" CellPadding="4" ForeColor="#333333" GridLines="None">
+            <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+            <CommandRowStyle BackColor="#E2DED6" Font-Bold="True" />
+            <EditRowStyle BackColor="#999999" />
+            <FieldHeaderStyle BackColor="#E9ECF1" Font-Bold="True" />
             <Fields>
                 <asp:BoundField DataField="EMPID" HeaderText="EMPID" ReadOnly="True" SortExpression="EMPID" />
                 <asp:BoundField DataField="EMP_TYPE" HeaderText="EMP_TYPE" SortExpression="EMP_TYPE" />
@@ -21,7 +25,16 @@
                 <asp:BoundField DataField="JOIN_DATE" HeaderText="JOIN_DATE" SortExpression="JOIN_DATE" />
                 <asp:CommandField ShowEditButton="True" ShowInsertButton="True" />
             </Fields>
+            <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+            <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+            <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
         </asp:DetailsView>
+    </p>
+    <p>
+        &nbsp;</p>
+    <p>
+        <asp:Button ID="backUpdateEmployees" runat="server" BackColor="#000099" BorderColor="Black" BorderStyle="Solid" ForeColor="White" PostBackUrl="~/employeesMaster.aspx" Text="&lt;&lt; Back" />
         <asp:SqlDataSource ID="editEmployees" runat="server" ConnectionString="<%$ ConnectionStrings:CreditStarCS %>" DeleteCommand="DELETE FROM &quot;EMPLOYEES&quot; WHERE &quot;EMPID&quot; = EMPID" InsertCommand="INSERT INTO &quot;EMPLOYEES&quot; (&quot;EMPID&quot;, &quot;EMP_TYPE&quot;, &quot;EMP_FNAME&quot;, &quot;EMP_LNAME&quot;, &quot;PHONE&quot;, &quot;BRANCH&quot;, &quot;DESIGNATION&quot;, &quot;JOIN_DATE&quot;) VALUES (:EMPID, :EMP_TYPE, :EMP_FNAME, :EMP_LNAME, :PHONE, :BRANCH, :DESIGNATION, :JOIN_DATE)" ProviderName="<%$ ConnectionStrings:CreditStarCS.ProviderName %>" SelectCommand="SELECT * FROM &quot;EMPLOYEES&quot;" UpdateCommand="UPDATE &quot;EMPLOYEES&quot; SET &quot;EMP_TYPE&quot; = :EMP_TYPE, &quot;EMP_FNAME&quot; = :EMP_FNAME, &quot;EMP_LNAME&quot; = :EMP_LNAME, &quot;PHONE&quot; = :PHONE, &quot;BRANCH&quot; = :BRANCH, &quot;DESIGNATION&quot; = :DESIGNATION, &quot;JOIN_DATE&quot; = :JOIN_DATE WHERE &quot;EMPID&quot; = :EMPID">
             <DeleteParameters>
                 <asp:Parameter Name="EMPID" Type="String" />
@@ -52,8 +65,7 @@
         &nbsp;</p>
     <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="backUpdateEmployees" runat="server" BackColor="#000099" BorderColor="Black" BorderStyle="Solid" ForeColor="White" PostBackUrl="~/employeesMaster.aspx" Text="&lt;&lt; Back" />
-    </p>
+        </p>
     <p>
         &nbsp;</p>
 </asp:Content>

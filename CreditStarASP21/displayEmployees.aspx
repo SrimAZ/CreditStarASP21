@@ -1,8 +1,11 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="displayEmployees.aspx.vb" Inherits="CreditStarASP21.WebForm8" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <br />
-    <strong>&nbsp; List of Employees</strong><br />
-    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="EMPID" DataSourceID="displayEmployeesDS" ForeColor="#333333" GridLines="None" style="margin-left: 44px">
+    <strong>
+<br />
+<br />
+&nbsp; List of Employees</strong><br />
+    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="EMPID" DataSourceID="displayEmployeesDS" ForeColor="#333333" GridLines="None" style="margin-left: 11px">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
             <asp:BoundField DataField="EMPID" HeaderText="EMPID" ReadOnly="True" SortExpression="EMPID" />
@@ -31,6 +34,6 @@
     <br />
     <br />
 &nbsp;
-    <asp:Button ID="backDisplayEmployees" runat="server" BackColor="#284775" ForeColor="White" PostBackUrl="~/employeesMaster.aspx" Text="&lt;&lt; Button" ToolTip="Click here to go back to the dashboard" />
+    <asp:Button ID="backDisplayEmployees" runat="server" BackColor="#284775" ForeColor="White" PostBackUrl="~/employeesMaster.aspx" Text="&lt;&lt; Back" ToolTip="Click here to go back to the dashboard" />
     <br />
 </asp:Content>
