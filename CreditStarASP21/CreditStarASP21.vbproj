@@ -190,6 +190,7 @@
     <Content Include="Rendering_Images\login_image.png" />
     <Content Include="Rendering_Images\pic2.png" />
     <Content Include="Rendering_Images\Transactions.jpg" />
+    <Content Include="Rendering_Images\User-journey-flowChart.PNG" />
     <Content Include="UpdateEmployees.aspx" />
     <Content Include="loanApplicationsLastFive.aspx" />
     <Content Include="displayEmployees.aspx" />
@@ -200,6 +201,7 @@
     <Content Include="loans.aspx" />
     <Content Include="displayHome.aspx" />
     <Content Include="displayEducation.aspx" />
+    <Content Include="journeyMap.aspx" />
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -409,6 +411,13 @@
     </Compile>
     <Compile Include="displayEducation.aspx.vb">
       <DependentUpon>displayEducation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="journeyMap.aspx.designer.vb">
+      <DependentUpon>journeyMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="journeyMap.aspx.vb">
+      <DependentUpon>journeyMap.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>

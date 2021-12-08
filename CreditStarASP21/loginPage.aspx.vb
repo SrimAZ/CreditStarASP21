@@ -89,7 +89,7 @@ Public Class WebForm5
                 Dim retVal = cmd.ExecuteNonQuery()
 
 
-                Response.Redirect("employeesMaster.aspx")
+                Response.Redirect("journeyMap.aspx")
 
             Else
                 MessageBox.Show("User Login Failed")
